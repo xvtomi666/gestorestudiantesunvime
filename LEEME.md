@@ -15,4 +15,14 @@
   ## Implementaciones 
 
 - En la clase Carrera agregue un Id, para que en caso de que se elija un Id, o cargar un nuevo estudiante se pueda elegir la carrera asignandole las materias a este con solo teclear un Id. 
-**Ejemplo** Tomas estudia la carrera Id = 10 (Programación) sus materias son... 
+**Ejemplo** Tomas estudia la carrera Id = 10 (Programación) sus materias son...
+  
+28/09/25
+- Por ahora estoy trabajando en hacer que el estudiante pueda elegir dos o mas carreras, y elegir las materias no obligadas a esa carrera, cuando el estudiante elija la o las materias, se le puede asignar sus calificaciones de estas. Al concluir todo esto se realiza un promedio de todas las materias de distinta carrera, la mayoria de ese segmento lo estoy haciendo un poco con la ayuda de la IA de Copilot, porque hay cosas que todavia no manejo muy bien.
+
+- Id de materia agregado al igual que el de carrera, ahora el alumno puede elegir sus materias con Id separado por comas (1,2,3)
+
+- El proyecto esta incompleto pero le voy agregando implementaciones cada que se me pase una idea por la cabeza
+
+ ## Autor 
+ @authors Tomás Ezequiel Villegas UNVIME - Programador Universitario en Sistemas
