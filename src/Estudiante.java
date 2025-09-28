@@ -78,8 +78,11 @@ public class Estudiante {
             System.out.println("ERROR: El promedio tiene que estar entre 0 y 10.");
         }
     }
-
     public List<Carrera> getCarrera() {
         return carreras;
     }
+    public void setCarrera(List<Carrera> carreras) {
+        this.carreras = carreras;
+    }
+
 }

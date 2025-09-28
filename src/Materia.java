@@ -1,4 +1,5 @@
 public class Materia {
+    private int Id;
     private String Nombre;
     private int Codigo;
     private int Credito;
@@ -7,7 +8,8 @@ public class Materia {
     public Materia() {
     }
 
-    public Materia(String nombre, int codigo, int credito, float calif) {
+    public Materia(int id ,String nombre, int codigo, int credito, float calif) {
+        this.Id = id;
         this.Nombre = nombre;
         this.Codigo = codigo;
         this.Credito = credito;
@@ -44,6 +46,14 @@ public class Materia {
 
     public void setCalif(float calif) {
         Calif = calif;
+    }
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int id) {
+        Id = id;
     }
     
 }
