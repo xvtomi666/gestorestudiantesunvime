@@ -37,7 +37,7 @@ public class Main {
 
         // carreras
         // Programacion
-        Carrera carreraProg = new Carrera(1, "Programador", new ArrayList<>(), materiasProg);
+        Carrera carreraProg = new Carrera(1, "Programador Universitario en Sistemas", new ArrayList<>(), materiasProg);
         // Matematicas
         Carrera carreraMath = new Carrera(2, "Matematicas", new ArrayList<>(), materiasMath);
         // Abogacia
@@ -120,6 +120,8 @@ public class Main {
                         m.setCalif(calif);
                     }
                     sc.nextLine(); // limpiar buffer
+                    
+
                     
                     System.out.println("Calificaciones asignadas correctamente.");
                     break;

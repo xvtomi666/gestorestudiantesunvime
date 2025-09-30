@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.List;
 
 public class Estudiante {
@@ -6,7 +5,7 @@ public class Estudiante {
     private String nombre;
     private String apellido;
     private int edad;
-    private List <Carrera> carreras;
+    private String carreras;
     private double promedio;
     private List<Materia> materias;
     // constructor vacio
@@ -18,20 +17,19 @@ public class Estudiante {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
-        this.carreras = new ArrayList<>();
+        this.carreras = carreras;
         this.promedio = promedio;
         
     }
 
-    public void calcularPromedio() {
-        if (materias.isEmpty())
-            ;
-        {
+      public void calcularPromedio() {
+        if (materias == null || materias.isEmpty()) {
             System.out.println("El estudiante no tiene materias registradas");
+            return;
         }
-        double suma = 0; 
-        for (Materia m : materias){
-            suma +=m.getCalif();
+        double suma = 0;
+        for (Materia m : materias) {
+            suma += m.getCalif();
         }
         promedio = suma / materias.size();
     }
@@ -78,11 +76,14 @@ public class Estudiante {
             System.out.println("ERROR: El promedio tiene que estar entre 0 y 10.");
         }
     }
-    public List<Carrera> getCarrera() {
+
+    public String getCarrera() {
         return carreras;
     }
-    public void setCarrera(List<Carrera> carreras) {
+    public void setCarrera(String carreras) {
         this.carreras = carreras;
     }
-
+    public List<Materia> getMaterias() {
+        return materias;
+    }
 }
